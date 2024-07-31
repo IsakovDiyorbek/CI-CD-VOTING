@@ -25,9 +25,12 @@ jobs:
         script: |
           pwd
           ls
-          cd  Voting_project
+          cd Voting_project
           sudo docker compose down
           sudo docker compose up
+          sudo docker compose down
+          sudo docker compose up
+
           
 
     - name: install dependencies
